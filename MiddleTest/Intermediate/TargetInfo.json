@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "MiddleTest",
+			"Path": "C:\\Users\\minhyeok\\Desktop\\Test\\GameMiddleTest.git\\Game_Middle\\MiddleTest\\Source\\MiddleTest.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "MiddleTestEditor",
+			"Path": "C:\\Users\\minhyeok\\Desktop\\Test\\GameMiddleTest.git\\Game_Middle\\MiddleTest\\Source\\MiddleTestEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

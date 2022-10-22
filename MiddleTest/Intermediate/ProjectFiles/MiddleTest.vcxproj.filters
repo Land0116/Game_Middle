@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\MiddleTest.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{4EDEADD7-EC24-42E0-93B4-117C70442F4C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\MiddleTest.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\MiddleTestEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{72C29449-9F0D-491D-9DC3-F8457F0BA5EB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\MiddleTest">
+      <UniqueIdentifier>{27FCAAFF-0984-4973-BBD3-3AD18299FC12}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\MiddleTest\MiddleTest.Build.cs">
+      <Filter>Source\MiddleTest</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\MiddleTest\MiddleTest.cpp">
+      <Filter>Source\MiddleTest</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MiddleTest\MiddleTest.h">
+      <Filter>Source\MiddleTest</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MiddleTest\MiddleTestCharacter.cpp">
+      <Filter>Source\MiddleTest</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MiddleTest\MiddleTestCharacter.h">
+      <Filter>Source\MiddleTest</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MiddleTest\MiddleTestGameMode.cpp">
+      <Filter>Source\MiddleTest</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MiddleTest\MiddleTestGameMode.h">
+      <Filter>Source\MiddleTest</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
