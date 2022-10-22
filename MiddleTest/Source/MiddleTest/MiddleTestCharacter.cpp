@@ -138,3 +138,4 @@ void AMiddleTestCharacter::MoveRight(float Value)
 		AddMovementInput(Direction, Value);
 	}
 }
+
