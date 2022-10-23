@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeMiddleTestCharacter() {}
 	UPackage* Z_Construct_UPackage__Script_MiddleTest();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	MIDDLETEST_API UClass* Z_Construct_UClass_UCharacterStatComponent_NoRegister();
 // End Cross Module References
 	void AMiddleTestCharacter::StaticRegisterNativesAMiddleTestCharacter()
 	{
@@ -49,6 +50,10 @@ void EmptyLinkFunctionForGeneratedCodeMiddleTestCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseLookUpRate_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseLookUpRate;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharacterStat_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CharacterStat;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -104,11 +109,20 @@ void EmptyLinkFunctionForGeneratedCodeMiddleTestCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMiddleTestCharacter_Statics::NewProp_BaseLookUpRate = { "BaseLookUpRate", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMiddleTestCharacter, BaseLookUpRate), METADATA_PARAMS(Z_Construct_UClass_AMiddleTestCharacter_Statics::NewProp_BaseLookUpRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMiddleTestCharacter_Statics::NewProp_BaseLookUpRate_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMiddleTestCharacter_Statics::NewProp_CharacterStat_MetaData[] = {
+		{ "Category", "Stat" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "MiddleTestCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMiddleTestCharacter_Statics::NewProp_CharacterStat = { "CharacterStat", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMiddleTestCharacter, CharacterStat), Z_Construct_UClass_UCharacterStatComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMiddleTestCharacter_Statics::NewProp_CharacterStat_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMiddleTestCharacter_Statics::NewProp_CharacterStat_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMiddleTestCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMiddleTestCharacter_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMiddleTestCharacter_Statics::NewProp_FollowCamera,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMiddleTestCharacter_Statics::NewProp_BaseTurnRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMiddleTestCharacter_Statics::NewProp_BaseLookUpRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMiddleTestCharacter_Statics::NewProp_CharacterStat,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMiddleTestCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMiddleTestCharacter>::IsAbstract,
@@ -137,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeMiddleTestCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMiddleTestCharacter, 739103423);
+	IMPLEMENT_CLASS(AMiddleTestCharacter, 1590982704);
 	template<> MIDDLETEST_API UClass* StaticClass<AMiddleTestCharacter>()
 	{
 		return AMiddleTestCharacter::StaticClass();
